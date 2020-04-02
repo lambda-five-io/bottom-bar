@@ -12,20 +12,20 @@ The REST API for the bottom bar for basic CRUD operations.
 
 ### Response
 
-Status: 200 OK
+`Status: 200 OK`
 
 This will return an array of JSON objects from the database:
 
 `Example`
 
-[
-    {
-        id: integer
-        song_name: string
-        artist_name: string
-        song_img: string (url)
-        song_audio: string (url)
-    }
+[  
+    {  
+        id: integer  
+        song_name: string  
+        artist_name: string  
+        song_img: string (url)  
+        song_audio: string (url)  
+    }  
 ]
 
 ### Request
