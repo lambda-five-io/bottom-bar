@@ -100,7 +100,7 @@ This will return a single JSON object from the database based on String in query
 Example:
 
     {
-        id: integer
+        id: Integer
         song_name: "Darkhorse"
         artist_name: String
         song_image: String (url)
