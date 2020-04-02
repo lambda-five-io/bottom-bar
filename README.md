@@ -23,37 +23,37 @@ Example:
     [
         {
             id: 1
-            song_name: string
-            artist_name: string
-            song_image: string (url)
-            song_audio: string (url)
-            genre: string
-            albums: array
-            related: array
+            song_name: String
+            artist_name: String
+            song_image: String (url)
+            song_audio: String (url)
+            genre: String
+            albums: Array
+            related: Array
         },
 
         {
             id: 2
-            song_name: string
-            artist_name: string
-            song_image: string (url)
-            song_audio: string (url)
-            genre: string
-            albums: array
-            related: array
+            song_name: String
+            artist_name: String
+            song_image: String (url)
+            song_audio: String (url)
+            genre: String
+            albums: Array
+            related: Array
         },
         .
         .
         .
         {
             id: n
-            song_name: string
-            artist_name: string
-            song_image: string (url)
-            song_audio: string (url)
-            genre: string
-            albums: array
-            related: array
+            song_name: String
+            artist_name: String
+            song_image: String (url)
+            song_audio: String (url)
+            genre: String
+            albums: Array
+            related: Array
         }
     ]
 
@@ -76,13 +76,13 @@ Example:
 
     {
         id: 123
-        song_name: string
-        artist_name: string
-        song_image: string (url)
-        song_audio: string (url)
-        genre: string
-        albums: array
-        related: array
+        song_name: String
+        artist_name: String
+        song_image: String (url)
+        song_audio: String (url)
+        genre: String
+        albums: Array
+        related: Array
     }
 
 ## Fetch a single item from the database by song name
@@ -95,19 +95,19 @@ Example:
 
 `Status: 200 OK`
 
-This will return a single JSON object from the database based on string in query.
+This will return a single JSON object from the database based on String in query.
 
 Example:
 
     {
         id: integer
         song_name: "Darkhorse"
-        artist_name: string
-        song_image: string (url)
-        song_audio: string (url)
-        genre: string
-        albums: array
-        related: array
+        artist_name: String
+        song_image: String (url)
+        song_audio: String (url)
+        genre: String
+        albums: Array
+        related: Array
     }
 
 ## Fetch all songs from database by artist
@@ -120,31 +120,31 @@ Example:
 
 `Status: 200 OK`
 
-This will return an array of JSON object from the database based on string in query.
+This will return an array of JSON object from the database based on String in query.
 
 Example:
 
     [   
         {
             id: 1234
-            song_name: string1
+            song_name: String1
             artist_name: "KMFDM"
-            song_image: string1 (url)
-            song_audio: string1 (url)
-            genre: string
-            albums: array
-            related: array
+            song_image: String1 (url)
+            song_audio: String1 (url)
+            genre: String
+            albums: Array
+            related: Array
         },
 
         {
             id: 1235
-            song_name: string2
+            song_name: String2
             artist_name: "KMFDM"
-            song_image: string2 (url)
-            song_audio: string2 (url)
-            genre: string
-            albums: array
-            related: array
+            song_image: String2 (url)
+            song_audio: String2 (url)
+            genre: String
+            albums: Array
+            related: Array
         },
 
         .
@@ -162,31 +162,31 @@ Example:
 
 `Status: 200 OK`
 
-This will return an array of JSON object from the database based on string in query.
+This will return an array of JSON object from the database based on String in query.
 
 Example:
 
     [   
         {
             id: 4321
-            song_name: string1
-            artist_name: string1
-            song_image: string1 (url)
-            song_audio: string1 (url)
+            song_name: String1
+            artist_name: String1
+            song_image: String1 (url)
+            song_audio: String1 (url)
             genre: punk
-            albums: array
-            related: array
+            albums: Array
+            related: Array
         },
 
         {
             id: 9876
-            song_name: string2
-            artist_name: string1
-            song_image: string2 (url)
-            song_audio: string2 (url)
+            song_name: String2
+            artist_name: String1
+            song_image: String2 (url)
+            song_audio: String2 (url)
             genre: punk
-            albums: array
-            related: array
+            albums: Array
+            related: Array
         },
 
         .
@@ -208,13 +208,13 @@ Example:
 
     {
         id: n + 1
-        song_name: string
-        artist_name: string
-        song_image: string (url)
-        song_audio: string (url)
-        genre: string
-        albums: array
-        related: array
+        song_name: String
+        artist_name: String
+        song_image: String (url)
+        song_audio: String (url)
+        genre: String
+        albums: Array
+        related: Array
     }
 
     ...where n is the number of items in the database
@@ -236,13 +236,13 @@ Example: PUT /songs/123
 
     {
         id: 123
-        song_name: string
-        artist_name: string
-        song_image: string (url)
-        song_audio: string (url)
-        genre: string
-        albums: array
-        related: array
+        song_name: String
+        artist_name: String
+        song_image: String (url)
+        song_audio: String (url)
+        genre: String
+        albums: Array
+        related: Array
     }
 
 ### Response
@@ -267,7 +267,7 @@ Two key value pairs are required to reduce conflicts.
 Update song file for Precipice by Rabbit Junk
 
     {
-        song_audio: string (url)
+        song_audio: String (url)
     }
 
 ### Response
