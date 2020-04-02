@@ -152,7 +152,7 @@ Example:
         .
     ]
 
-## Fetch all songs from database by genere
+## Fetch all songs from database by genre
 
 ### Request
 
