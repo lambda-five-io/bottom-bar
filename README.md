@@ -272,7 +272,7 @@ Update song file for Precipice by Rabbit Junk
 
 ### Response
 
-`Status: 203 (updated) entry replaced in database`
+`Status: 203 (updated) entry information updated in database`
 
 
 # Deleting Data
