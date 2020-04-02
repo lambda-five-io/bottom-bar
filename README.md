@@ -110,7 +110,7 @@ Example:
         related: array
     }
 
-## Fetch a single item from the database by artist name
+## Fetch all songs from database by artist
 
 ### Request
 
@@ -120,20 +120,79 @@ Example:
 
 `Status: 200 OK`
 
-This will return a single JSON object from the database based on string in query.
+This will return an array of JSON object from the database based on string in query.
 
 Example:
 
-    {
-        id: integer
-        song_name: string
-        artist_name: "KMFDM"
-        song_image: string (url)
-        song_audio: string (url)
-        genre: string
-        albums: array
-        related: array
-    }
+    [   
+        {
+            id: 1234
+            song_name: string1
+            artist_name: "KMFDM"
+            song_image: string1 (url)
+            song_audio: string1 (url)
+            genre: string
+            albums: array
+            related: array
+        },
+
+        {
+            id: 1235
+            song_name: string2
+            artist_name: "KMFDM"
+            song_image: string2 (url)
+            song_audio: string2 (url)
+            genre: string
+            albums: array
+            related: array
+        },
+
+        .
+        .
+        .
+    ]
+
+## Fetch all songs from database by genere
+
+### Request
+
+`GET /songs/genre?="punk"`
+
+### Response
+
+`Status: 200 OK`
+
+This will return an array of JSON object from the database based on string in query.
+
+Example:
+
+    [   
+        {
+            id: 4321
+            song_name: string1
+            artist_name: string1
+            song_image: string1 (url)
+            song_audio: string1 (url)
+            genre: punk
+            albums: array
+            related: array
+        },
+
+        {
+            id: 9876
+            song_name: string2
+            artist_name: string1
+            song_image: string2 (url)
+            song_audio: string2 (url)
+            genre: punk
+            albums: array
+            related: array
+        },
+
+        .
+        .
+        .
+    ]
 
 
 # Posting Data
@@ -148,7 +207,7 @@ The body of the request will be the entry to insert according to standard schema
 Example:
 
     {
-        id: integer
+        id: n + 1
         song_name: string
         artist_name: string
         song_image: string (url)
@@ -157,6 +216,8 @@ Example:
         albums: array
         related: array
     }
+
+    ...where n is the number of items in the database
 
 ### Response
 
@@ -167,14 +228,14 @@ Example:
 
 ### Request
 
-`PUT /songs`
+`PUT /songs/:id`
 
-The body of the request will be the replacement entry according to standard schema:
+The body of the request will be the replacement entry according to standard schema with different info:
 
-Example:
+Example: PUT /songs/123
 
     {
-        id: integer
+        id: 123
         song_name: string
         artist_name: string
         song_image: string (url)
