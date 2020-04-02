@@ -4,6 +4,8 @@
 
 The REST API for the bottom bar music player for basic CRUD operations.
 
+
+# Grabbing Data
 ## Fetch all items from the database
 
 ### Request
@@ -25,6 +27,9 @@ Example:
             artist_name: string
             song_image: string (url)
             song_audio: string (url)
+            genre: string
+            albums: array
+            related: array
         },
 
         {
@@ -33,6 +38,9 @@ Example:
             artist_name: string
             song_image: string (url)
             song_audio: string (url)
+            genre: string
+            albums: array
+            related: array
         },
         .
         .
@@ -43,6 +51,9 @@ Example:
             artist_name: string
             song_image: string (url)
             song_audio: string (url)
+            genre: string
+            albums: array
+            related: array
         }
     ]
 
@@ -53,7 +64,7 @@ Example:
 
 ### Request
 
-`GET /song/id?=123`
+`GET /songs/id?=123`
 
 ### Response
 
@@ -69,13 +80,16 @@ Example:
         artist_name: string
         song_image: string (url)
         song_audio: string (url)
+        genre: string
+        albums: array
+        related: array
     }
 
 ## Fetch a single item from the database by song name
 
 ### Request
 
-`GET /song/song_name?="Darkhorse"`
+`GET /songs/song_name?="Darkhorse"`
 
 ### Response
 
@@ -91,13 +105,16 @@ Example:
         artist_name: string
         song_image: string (url)
         song_audio: string (url)
+        genre: string
+        albums: array
+        related: array
     }
 
 ## Fetch a single item from the database by artist name
 
 ### Request
 
-`GET /song/artist_name?="KMFDM"`
+`GET /songs/artist_name?="KMFDM"`
 
 ### Response
 
@@ -113,6 +130,100 @@ Example:
         artist_name: "KMFDM"
         song_image: string (url)
         song_audio: string (url)
+        genre: string
+        albums: array
+        related: array
     }
 
 
+# Posting Data
+## Insert a single item to the database
+
+### Request
+
+`POST /songs`
+
+The body of the request will be the entry to insert according to standard schema:
+
+Example:
+
+    {
+        id: integer
+        song_name: string
+        artist_name: string
+        song_image: string (url)
+        song_audio: string (url)
+        genre: string
+        albums: array
+        related: array
+    }
+
+### Response
+
+`Status: 201 (created) entry registered to database`
+
+
+## Replace an item in the database with a different entry
+
+### Request
+
+`PUT /songs`
+
+The body of the request will be the replacement entry according to standard schema:
+
+Example:
+
+    {
+        id: integer
+        song_name: string
+        artist_name: string
+        song_image: string (url)
+        song_audio: string (url)
+        genre: string
+        albums: array
+        related: array
+    }
+
+### Response
+
+`Status: 202 (replaced) entry replaced in database`
+
+
+## Update information for an existing item in the database
+
+### Request
+
+`PATCH /songs?key1=value1&key2=value2`
+
+The body of the request will be the data to update for item with two specified keys and values.
+Example:
+
+`PATCH /songs?song_name="Precipice"&artist_name="Rabbit Junk"
+
+This would be used to update a path to an audio file or genre, although it technically could be anything.
+Two key value pairs are required to reduce conflicts.
+
+Update song file for Precipice by Rabbit Junk
+
+    {
+        song_audio: string (url)
+    }
+
+### Response
+
+`Status: 203 (updated) entry replaced in database`
+
+
+# Deleting Data
+## Delete an entry from the database
+
+### Request
+
+`DELETE /songs?id=id_value&song_name="imagine"`
+
+Can delete a song from the database if you have the correct id and associated song name.
+
+
+### Response
+
+`Status: 204 (deleted) entry in database`
