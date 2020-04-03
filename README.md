@@ -28,8 +28,8 @@ Example:
             song_image: String (url)
             song_audio: String (url)
             genre: String
-            albums: Array
-            related: Array
+            upload_date: Date
+            album: String
         },
 
         {
@@ -39,8 +39,8 @@ Example:
             song_image: String (url)
             song_audio: String (url)
             genre: String
-            albums: Array
-            related: Array
+            upload_date: Date
+            album: String
         },
         .
         .
@@ -52,8 +52,8 @@ Example:
             song_image: String (url)
             song_audio: String (url)
             genre: String
-            albums: Array
-            related: Array
+            upload_date: Date
+            album: String
         }
     ]
 
@@ -81,8 +81,8 @@ Example:
         song_image: String (url)
         song_audio: String (url)
         genre: String
-        albums: Array
-        related: Array
+        upload_date: Date
+        album: String
     }
 
 ## Fetch a single item from the database by song name
@@ -106,11 +106,11 @@ Example:
         song_image: String (url)
         song_audio: String (url)
         genre: String
-        albums: Array
-        related: Array
+        upload_date: Date
+        album: String
     }
 
-## Fetch all songs from database by artist
+## Fetch all songs from artist in database
 
 ### Request
 
@@ -131,9 +131,9 @@ Example:
             artist_name: "KMFDM"
             song_image: String1 (url)
             song_audio: String1 (url)
-            genre: String
-            albums: Array
-            related: Array
+            genre: Industrial
+            upload_date: 01.02.03
+            album: String1
         },
 
         {
@@ -142,9 +142,52 @@ Example:
             artist_name: "KMFDM"
             song_image: String2 (url)
             song_audio: String2 (url)
-            genre: String
-            albums: Array
-            related: Array
+            genre: Industrial
+            upload_date: 01.02.03
+            album: String2
+        },
+
+        .
+        .
+        .
+    ]
+
+
+## Fetch all songs from an album in the database
+
+### Request
+
+`GET /songs/album?="Exorcisms"`
+
+### Response
+
+`Status: 200 OK`
+
+This will return an array of JSON object from the database based on String in query.
+
+Example:
+
+    [   
+        {
+            id: 1234
+            song_name: String1
+            artist_name: Bella Morte
+            song_image: String1 (url)
+            song_audio: String1 (url)
+            genre: Goth_Rock
+            upload_date: 01.02.03
+            album: Exorcisms
+        },
+
+        {
+            id: 1235
+            song_name: String2
+            artist_name: Bella Morte
+            song_image: String2 (url)
+            song_audio: String2 (url)
+            genre: Goth_Rock
+            upload_date: 01.02.03
+            album: Exorcisms
         },
 
         .
@@ -169,24 +212,24 @@ Example:
     [   
         {
             id: 4321
-            song_name: String1
-            artist_name: String1
-            song_image: String1 (url)
-            song_audio: String1 (url)
+            song_name: String
+            artist_name: String
+            song_image: String (url)
+            song_audio: String (url)
             genre: punk
-            albums: Array
-            related: Array
+            upload_date: Date
+            album: String
         },
 
         {
             id: 9876
-            song_name: String2
-            artist_name: String1
-            song_image: String2 (url)
-            song_audio: String2 (url)
+            song_name: String
+            artist_name: String
+            song_image: String (url)
+            song_audio: String (url)
             genre: punk
-            albums: Array
-            related: Array
+            upload_date: Date
+            album: String
         },
 
         .
@@ -213,8 +256,8 @@ Example:
         song_image: String (url)
         song_audio: String (url)
         genre: String
-        albums: Array
-        related: Array
+        upload_date: Date
+        album: String
     }
 
     ...where n is the number of items in the database
@@ -241,8 +284,8 @@ Example: PUT /songs/123
         song_image: String (url)
         song_audio: String (url)
         genre: String
-        albums: Array
-        related: Array
+        upload_date: Date
+        album: String
     }
 
 ### Response
