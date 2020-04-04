@@ -23,7 +23,9 @@
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
     "babel-preset-airbnb": "^4.4.0",
+    "cli-progress": "^3.6.1",
     "css-loader": "^3.4.2",
+    "csv-write-stream": "^2.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
@@ -32,6 +34,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "faker": "^4.1.0",
     "jest": "^25.1.0",
     "jest-environment-enzyme": "^7.1.2",
     "jest-enzyme": "^7.1.2",
@@ -39,16 +42,14 @@
     "sinon": "^9.0.1",
     "style-loader": "^1.1.3",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11",
-    "faker": "^4.1.0",
-    "csv-write-stream": "^2.0.0"
+    "webpack-cli": "^3.3.11"
   },
   "scripts": {
     "start": "nodemon server",
     "seed": "node ./db/dataSeed.js",
     "test": "jest",
     "build": "webpack -w",
-    "seed postgres": "node ./db/postgresSeed.js"
+    "seedpg": "node ./db/postgresSeed.js"
   },
   "repository": {
     "type": "git",
