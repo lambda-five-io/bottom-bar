@@ -8,4 +8,5 @@ CREATE TABLE IF NOT EXISTS songs (
   artist_name VARCHAR(50),
   song_image VARCHAR(100),
   song_audio VARCHAR(100)
-);
+)
+
