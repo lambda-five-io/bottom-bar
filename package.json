@@ -6,12 +6,12 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "faker": "^4.1.0",
     "flexbox-react": "^4.4.0",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
+    "pg": "^8.0.0",
     "react": "^16.13.0",
     "react-css-modules": "^4.7.11",
     "react-dom": "^16.13.0"
@@ -39,13 +39,16 @@
     "sinon": "^9.0.1",
     "style-loader": "^1.1.3",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "faker": "^4.1.0",
+    "csv-write-stream": "^2.0.0"
   },
   "scripts": {
     "start": "nodemon server",
     "seed": "node ./db/dataSeed.js",
     "test": "jest",
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "seed postgres": "node ./db/postgresSeed.js"
   },
   "repository": {
     "type": "git",
