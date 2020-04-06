@@ -17,7 +17,7 @@ CREATE TABLE songs (
 
 CREATE TABLE albums (
 	album_id SERIAL,
-	album_name VARCHAR(20),
+	album_name VARCHAR(50),
 	upload_date DATE,
 	artist_id INTEGER,
 	PRIMARY KEY (album_id)
