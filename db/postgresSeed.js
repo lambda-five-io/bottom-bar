@@ -134,7 +134,7 @@ const albumGen = () => {
     let select = [albumType1, albumType2];
     let albumNameType = select[choose];
 
-    let uploadDate = faker.date.future();
+    let uploadDate = faker.date.future(10);
 
     let id = j % 100000
     if (id === 0) {
@@ -144,7 +144,7 @@ const albumGen = () => {
     const albumData = {
         //reserved for SERIAL id (not needed in seed)
         album_name: albumNameType,
-        upload_date: uploadDate,
+        upload_date: uploadDate.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }),
         artist_id: id
     };
 
@@ -221,7 +221,7 @@ const songGen = () => {
             const adjective = capitalize(Sentencer.make("{{ adjective }}"));
 
             const songType1 = `${prefix} ${middle} ${adjective} ${noun}`;
-            const songType2 = faker.hacker.phrase();
+            const songType2 = faker.hacker.phrase().slice(0,99);
 
             //randomly choose song type
             const choose = Math.floor(Math.random() * 2);
