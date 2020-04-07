@@ -6,23 +6,9 @@ const Sentencer = require('sentencer');
 // enable writing mock data to csv file exported to postgres db later
 // _________________________________________________________________
 
-
-//this is not updated for new schema and uses existing one inhereted from component (mysql)
-//...currently can bash 7,000,000 unique entries into a CSV file before crash
-//...this is a good foundation to proceed in efficiently generating a CSV file to load into postgreSQL
-//...continuing 4.04
-
-
 const writerArtist = csvWriter();
 const writerAlbum = csvWriter();
 const writerSongs = csvWriter();
-
-//generate arrays to hold objects so data consistency is maintained throughout tables
-let artists = [];
-let albums = [];
-let songs = [];
-//___________________________________________________________________________________
-
 
 
 //__________________________________________________________________________
@@ -30,6 +16,8 @@ let songs = [];
 //__________________________________________________________________________
 
 const artistGen = () => {
+
+    console.time('Time');
 
     const writeable = fs.createWriteStream('./db/CSV/PostgreSQL/artistTable.csv');
     writerArtist.pipe(writeable);
@@ -71,7 +59,6 @@ const artistGen = () => {
         artist_name: artistNameType
     };
 
-    artists.push(artistData);
     writerArtist.write(artistData);
 
 
@@ -91,9 +78,9 @@ const artistGen = () => {
 
 //COMPLETION 
 writerArtist.end();
-let sample = Math.floor(Math.random() * 100000);
-console.log('here is a sample artist name: ' + artists[sample]['artist_name']);
 console.log('Artist table seeding complete.');
+console.timeEnd('Time');
+console.log('\n');
 };
 
 
@@ -105,6 +92,8 @@ console.log('Artist table seeding complete.');
 
 const albumGen = () => {
 
+    console.time('Time');
+
     const writeable = fs.createWriteStream('./db/CSV/PostgreSQL/albumTable.csv');
     writerAlbum.pipe(writeable);
 
@@ -114,7 +103,7 @@ const albumGen = () => {
 
     for (let j = 1; j <= 1000000; j++) {
 
-    const progress = j % 10000; //confirm every 1000 entries
+    const progress = j % 10000; //confirm every 10000 entries
     const message = j % 50000; //used for console logging at every 5% completion
     //__________________________________________________________________________
 
@@ -150,7 +139,6 @@ const albumGen = () => {
         artist_id: j
     };
 
-    albums.push(albumData);
     writerAlbum.write(albumData);
 
 
@@ -170,11 +158,120 @@ const albumGen = () => {
 
 //COMPLETION 
 writerAlbum.end();
-let sample = Math.floor(Math.random() * 1000000);
-console.log('id value ' + albums[sample]['artist_id']);
-console.log('here is a sample album name: ' + albums[sample]['album_name']);
 console.log('Album table seeding complete.');
+console.timeEnd('Time');
+console.log('\n');
+};
+
+
+
+//__________________________________________________________________________
+//**********************  SONGS  ************************* 
+//__________________________________________________________________________
+
+const songGen = () => {
+
+    console.time('Time');
+
+    const writeable = fs.createWriteStream('./db/CSV/PostgreSQL/songTable.csv');
+    writerSongs.pipe(writeable);
+
+    //PROGRESS
+    let percentCounter = 0;
+    //__________________________________________________________________________
+
+    let k = 0;
+
+    writeSong();
+    function writeSong() {
+    let okay = true;
+
+        do {
+
+            k++;
+
+            const progress = k % 100000; //confirm every 100000 entries
+            const message = k % 500000; //used for console logging at every 5% completion
+            //__________________________________________________________________________
+
+            //capitalization helper function
+            const capitalize = (s) => {
+                if (typeof s !== 'string') return ''
+                return s.charAt(0).toUpperCase() + s.slice(1)
+            };
+
+            //songType1 construct
+            const prefix = faker.lorem.word();
+
+            const chooseMiddle = Math.floor(Math.random() * 5);
+            const middles = ['in the', 'a', 'towards', 'for my', '']
+            const middle = middles[chooseMiddle];
+
+            const noun = capitalize(Sentencer.make("{{ noun }}"));
+            const adjective = capitalize(Sentencer.make("{{ adjective }}"));
+
+            const songType1 = `${prefix} ${middle} ${adjective} ${noun}`;
+            const songType2 = faker.hacker.phrase();
+
+            //randomly choose song type
+            const choose = Math.floor(Math.random() * 2);
+            const select = [songType1, songType2];
+            const songNameType = select[choose];
+
+
+            const numPadded = k.toString().padStart(3, '0');
+
+            //randomly choose genre
+            const genres = ['punk', 'metal', 'electronica', 'hardcore punk', 'pop', 'hip hop', 'new wave', 'jazz', 'blues', 'R&B', 'classical', 'rock', 'indie rock', 'mathcore', 'folk', 'country', 'ska', 'grunge', 'trance', 'soul'];
+            let chooseGenre = Math.floor(Math.random() * 20);
+            let genre = capitalize(genres[chooseGenre]);
+
+            const songData = {
+                //reserved for SERIAL id (not needed in seed)
+                song_name: songNameType,
+                song_image: 'https://audibly-bp.s3-us-west-1.amazonaws.com/' + numPadded + '.jpg',
+                song_audio: 'https://audibly-bp.s3-us-west-1.amazonaws.com/' + numPadded + '.mp3',
+                genre: genre,
+                album_id: k
+            };
+
+            if (k === 10000000) {
+                //COMPLETION 
+                writerSongs.write(songData, () => {
+                writerSongs.end();
+                console.log('Song table seeding complete.');
+                console.timeEnd('Time');
+                console.log('\n');
+                });
+
+            } else {
+
+            okay = writerSongs.write(songData);
+
+            }
+
+        //PROGRESS
+            //__________________________________________________________________________
+            if (progress === 0) {
+                process.stdout.write(`.`);
+            }
+
+            if (message === 0) {
+                percentCounter++;
+                let total = percentCounter * 5;
+                console.log(`${total} percent complete.`);
+            }
+            //__________________________________________________________________________
+        } while (k < 10000000 && okay);
+
+        if (k < 10000000) {
+            // Had to stop early!
+            // Write some more once it drains.
+            writerSongs.once('drain', writeSong);
+        }
+    }
 };
 
 artistGen();
 albumGen();
+songGen();
