@@ -11,12 +11,15 @@ const writerAlbum = csvWriter();
 const writerSongs = csvWriter();
 
 
+
+
 //__________________________________________________________________________
 //**********************  ARTISTS  ************************* 
 //__________________________________________________________________________
 
 const artistGen = () => {
 
+    console.log('\x1b[37m%s\x1b[0m: ', 'Initialize Artist Table Seed');
     console.time('Time');
 
     const writeable = fs.createWriteStream('./db/CSV/PostgreSQL/artistTable.csv');
@@ -78,7 +81,7 @@ const artistGen = () => {
 
 //COMPLETION 
 writerArtist.end();
-console.log('Artist table seeding complete.');
+console.log('\x1b[32m%s\x1b[0m:', 'Artist table seeding complete');
 console.timeEnd('Time');
 console.log('\n');
 };
@@ -92,6 +95,7 @@ console.log('\n');
 
 const albumGen = () => {
 
+    console.log('\x1b[37m%s\x1b[0m: ', 'Initialize Album Table Seed');
     console.time('Time');
 
     const writeable = fs.createWriteStream('./db/CSV/PostgreSQL/albumTable.csv');
@@ -132,11 +136,16 @@ const albumGen = () => {
 
     let uploadDate = faker.date.future();
 
+    let id = j % 100000
+    if (id === 0) {
+        id = 100000;
+    }
+
     const albumData = {
         //reserved for SERIAL id (not needed in seed)
         album_name: albumNameType,
         upload_date: uploadDate,
-        artist_id: j
+        artist_id: id
     };
 
     writerAlbum.write(albumData);
@@ -158,7 +167,7 @@ const albumGen = () => {
 
 //COMPLETION 
 writerAlbum.end();
-console.log('Album table seeding complete.');
+console.log('\x1b[32m%s\x1b[0m:', 'Album table seeding complete');
 console.timeEnd('Time');
 console.log('\n');
 };
@@ -171,6 +180,7 @@ console.log('\n');
 
 const songGen = () => {
 
+    console.log('\x1b[37m%s\x1b[0m: ', 'Initialize Song Table Seed');
     console.time('Time');
 
     const writeable = fs.createWriteStream('./db/CSV/PostgreSQL/songTable.csv');
@@ -226,20 +236,25 @@ const songGen = () => {
             let chooseGenre = Math.floor(Math.random() * 20);
             let genre = capitalize(genres[chooseGenre]);
 
+            let id = k % 1000000
+            if (id === 0) {
+                id = 1000000;
+            }
+
             const songData = {
                 //reserved for SERIAL id (not needed in seed)
                 song_name: songNameType,
                 song_image: 'https://audibly-bp.s3-us-west-1.amazonaws.com/' + numPadded + '.jpg',
                 song_audio: 'https://audibly-bp.s3-us-west-1.amazonaws.com/' + numPadded + '.mp3',
                 genre: genre,
-                album_id: k
+                album_id: id
             };
 
             if (k === 10000000) {
                 //COMPLETION 
                 writerSongs.write(songData, () => {
                 writerSongs.end();
-                console.log('Song table seeding complete.');
+                console.log('\x1b[32m%s\x1b[0m:', 'Song table seeding complete');
                 console.timeEnd('Time');
                 console.log('\n');
                 });
