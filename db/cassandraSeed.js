@@ -57,17 +57,17 @@ const cassandraGen = () => {
 
             getSong = () => {
                 //songType1 construct
-                const prefix = faker.lorem.word();
+                const prefix = capitalize(faker.lorem.word());
 
                 const chooseMiddle = Math.floor(Math.random() * 5);
-                const middles = ['in the', 'a', 'towards', 'for my', '']
+                const middles = ['in the', 'a', 'towards', 'for my']
                 const middle = middles[chooseMiddle];
 
                 const noun = capitalize(Sentencer.make("{{ noun }}"));
                 const adjective = capitalize(Sentencer.make("{{ adjective }}"));
 
                 const songType1 = `${prefix} ${middle} ${adjective} ${noun}`;
-                const songType2 = faker.hacker.phrase();
+                const songType2 = capitalize(faker.hacker.noun()) + ' ' + capitalize(faker.hacker.ingverb()) + ' ' + capitalize(faker.random.word());
 
                 //randomly choose song type
                 const choose = Math.floor(Math.random() * 2);
@@ -78,13 +78,13 @@ const cassandraGen = () => {
             }
 
             getSongImage = () => {
-                const numPadded = (k%1000).toString().padStart(3, '0');
+                const numPadded = (k%900).toString().padStart(3, '0');
                 const songImage = 'https://audibly-bp.s3-us-west-1.amazonaws.com/' + numPadded + '.jpg';
                 return songImage;
             }
 
             getSongAudio = () => {
-                const numPadded = (k%1000).toString().padStart(3, '0');
+                const numPadded = (k%900).toString().padStart(3, '0');
                 const songAudio = 'https://audibly-bp.s3-us-west-1.amazonaws.com/' + numPadded + '.mp3';
                 return songAudio;
             }
@@ -145,47 +145,47 @@ const cassandraGen = () => {
             if (k % 10 === 1) {
                 genre = getGenre();
                 album = getAlbumName();
-                upload_date = faker.date.future(10).toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
+                upload_date = new Date(+(new Date()) - Math.floor(Math.random()*10000000000)).toISOString().slice(0,10);
             }
 
             const songData = {
                 _id: k,
-                song_name: getSong(),
-                song_image: getSongImage(),
-                song_audio: getSongAudio(),
+                album: album,
                 artist: artist,
                 genre: genre,
-                album: album,
+                song_audio: getSongAudio(),
+                song_image: getSongImage(),
+                song_name: getSong(),
                 upload_date: upload_date
             };
 
             const albumData = {
                 album: songData.album,
                 song_name: songData.song_name,
-                song_image: songData.song_image,
-                song_audio: songData.song_audio,
                 artist: songData.artist,
                 genre: songData.genre,
+                song_audio: songData.song_audio,
+                song_image: songData.song_image,
                 upload_date: songData.upload_date
             }
 
             const artistData = {
                 artist: songData.artist,
                 song_name: songData.song_name,
-                song_image: songData.song_image,
-                song_audio: songData.song_audio,
-                genre: songData.genre,
                 album: songData.album,
+                genre: songData.genre,
+                song_audio: songData.song_audio,
+                song_image: songData.song_image,
                 upload_date: songData.upload_date
             }
 
             const genreData = {
                 genre: songData.genre,
                 song_name: songData.song_name,
-                song_image: songData.song_image,
-                song_audio: songData.song_audio,
-                artist: songData.artist,
                 album: songData.album,
+                artist: songData.artist,
+                song_audio: songData.song_audio,
+                song_image: songData.song_image,
                 upload_date: songData.upload_date
             }
 
