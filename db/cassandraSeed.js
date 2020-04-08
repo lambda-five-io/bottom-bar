@@ -22,9 +22,20 @@ writerSongsByGenre.pipe(fs.createWriteStream('./db/CSV/Cassandra/genreTableCAS.c
 
 const cassandraGen = () => {
 
+    const target = 10000000;
+    let percentCounter = 0;
+
+    console.log('\x1b[37m%s\x1b[0m: ', 'Initialize Cassandra Table Seeds');
+    console.time('Time');
+
     //target = 10mil primary records
     let k = 0;
-
+    
+    let artist = null;
+    let genre = null;
+    let album = null;
+    let upload_date = null;
+    
     writeSong();
     function writeSong() {
         let okay = true;
@@ -32,6 +43,11 @@ const cassandraGen = () => {
         do {
 
             k++;
+
+            const progress = k % (target/1000); //confirm every 10000 entries
+            const message = k % (target/100); //used for console logging at every 1% completion
+            //__________________________________________________________________________
+
 
             //capitalization helper function
             const capitalize = (s) => {
@@ -51,7 +67,7 @@ const cassandraGen = () => {
                 const adjective = capitalize(Sentencer.make("{{ adjective }}"));
 
                 const songType1 = `${prefix} ${middle} ${adjective} ${noun}`;
-                const songType2 = faker.hacker.phrase().slice(0,99);
+                const songType2 = faker.hacker.phrase();
 
                 //randomly choose song type
                 const choose = Math.floor(Math.random() * 2);
@@ -122,17 +138,25 @@ const cassandraGen = () => {
                 return albumNameType;                
             }
 
-            let uploadDate = faker.date.future(10);
+            if (k % 100 === 1) {
+                artist = getArtistName();
+            }
+
+            if (k % 10 === 1) {
+                genre = getGenre();
+                album = getAlbumName();
+                upload_date = faker.date.future(10).toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
+            }
 
             const songData = {
                 _id: k,
                 song_name: getSong(),
                 song_image: getSongImage(),
                 song_audio: getSongAudio(),
-                artist: getArtistName(),
-                genre: getGenre(),
-                album: getAlbumName(),
-                upload_date: uploadDate.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })
+                artist: artist,
+                genre: genre,
+                album: album,
+                upload_date: upload_date
             };
 
             const albumData = {
@@ -165,26 +189,59 @@ const cassandraGen = () => {
                 upload_date: songData.upload_date
             }
 
-            if (k === 10000000) {
+            if (k === target) {
                 //COMPLETION 
                 writerSongs.write(songData, () => {
-                writerSongs.end();
-                console.log('\x1b[32m%s\x1b[0m:', 'Song table seeding complete');
-                console.timeEnd('Time');
-                console.log('\n');
-                });
+                    writerSongs.end();
+                    console.log('\x1b[32m%s\x1b[0m:', 'Song table seeding complete');
+                    console.log('\n');
+                    });
+
+                writerSongsByAlbum.write(albumData, () => {
+                    writerSongsByAlbum.end();
+                    console.log('\x1b[32m%s\x1b[0m:', 'Ablum table seeding complete');
+                    console.log('\n');
+                    });
+
+                writerSongsByArtist.write(artistData, () => {
+                    writerSongsByArtist.end();
+                    console.log('\x1b[32m%s\x1b[0m:', 'Artist table seeding complete');
+                    console.log('\n');
+                    });
+
+                writerSongsByGenre.write(genreData, () => {
+                    writerSongs.end();
+                    console.log('\x1b[32m%s\x1b[0m:', 'Genre table seeding complete');
+                    console.timeEnd('Time');
+                    console.log('\n');
+                    });
 
             } else {
 
-            writerSongs.write(songData)
-            writerSongsByAlbum.write(albumData)
-            writerSongsByArtist.write(artistData)
-            writerSongsByGenre.write(genreData)
+            okay = writerSongs.write(songData);
+            writerSongsByAlbum.write(albumData);
+            writerSongsByArtist.write(artistData);
+            writerSongsByGenre.write(genreData);
             }
 
-        } while (k < 100 && okay);
+            //PROGRESS
+            //__________________________________________________________________________
+            if (progress === 0) {
+                process.stdout.write(`.`);
+            }
 
-        if (k < 10000000) {
+            if (message === 0) {
+                percentCounter++;
+                if (percentCounter === 50) {
+                    console.log('\x1b[32m%s\x1b[0m:', 'Halfway to Quantum Enlightenment');
+                }
+                console.log(`${percentCounter} percent complete.`);
+            }
+            //__________________________________________________________________________
+
+        } while (k < target && okay);
+
+        if (k < target) {
             // Had to stop early!
             // Write some more once it drains.
             writerSongs.once('drain', writeSong);
