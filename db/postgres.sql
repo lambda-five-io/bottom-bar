@@ -1,6 +1,7 @@
--- CREATE DATABASE audiblyBottomPlayer
+CREATE DATABASE audiblyBottomPlayer;
 
--- \c audiblyBottomPlayer
+\c audiblybottomplayer;
+
 CREATE TABLE artists (
 	artist_id SERIAL,
 	artist_name VARCHAR(100),

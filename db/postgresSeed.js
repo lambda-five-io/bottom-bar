@@ -134,7 +134,7 @@ const albumGen = () => {
     let select = [albumType1, albumType2];
     let albumNameType = select[choose];
 
-    let uploadDate = faker.date.future(10);
+    let uploadDate = new Date(+(new Date()) - Math.floor(Math.random()*10000000000)).toISOString().slice(0,10);
 
     let id = j % 100000
     if (id === 0) {
@@ -144,7 +144,7 @@ const albumGen = () => {
     const albumData = {
         //reserved for SERIAL id (not needed in seed)
         album_name: albumNameType,
-        upload_date: uploadDate.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }),
+        upload_date: uploadDate,
         artist_id: id
     };
 
@@ -211,17 +211,17 @@ const songGen = () => {
             };
 
             //songType1 construct
-            const prefix = faker.lorem.word();
+            const prefix = capitalize(faker.lorem.word());
 
             const chooseMiddle = Math.floor(Math.random() * 5);
-            const middles = ['in the', 'a', 'towards', 'for my', '']
+            const middles = ['in the', 'a', 'towards', 'for my']
             const middle = middles[chooseMiddle];
 
             const noun = capitalize(Sentencer.make("{{ noun }}"));
             const adjective = capitalize(Sentencer.make("{{ adjective }}"));
 
             const songType1 = `${prefix} ${middle} ${adjective} ${noun}`;
-            const songType2 = faker.hacker.phrase().slice(0,99);
+            const songType2 = capitalize(faker.hacker.noun()) + ' ' + capitalize(faker.hacker.ingverb()) + ' ' + capitalize(faker.random.word());
 
             //randomly choose song type
             const choose = Math.floor(Math.random() * 2);
@@ -229,7 +229,7 @@ const songGen = () => {
             const songNameType = select[choose];
 
 
-            const numPadded = k.toString().padStart(3, '0');
+            const numPadded = (k%900).toString().padStart(3, '0');
 
             //randomly choose genre
             const genres = ['punk', 'metal', 'electronica', 'hardcore punk', 'pop', 'hip hop', 'new wave', 'jazz', 'blues', 'R&B', 'classical', 'rock', 'indie rock', 'mathcore', 'folk', 'country', 'ska', 'grunge', 'trance', 'soul'];
