@@ -297,21 +297,21 @@ Example: PUT /songs/123
 
 ### Request
 
-`PATCH /songs?key1=value1&key2=value2`
-
-The body of the request will be the data to update for item with two specified keys and values.
-Example:
-
-`PATCH /songs?song_name="Precipice"&artist_name="Rabbit Junk"
+`PATCH /songs/:id`
 
 This would be used to update a path to an audio file or genre, although it technically could be anything.
-Two key value pairs are required to reduce conflicts.
 
-Update song file for Precipice by Rabbit Junk
+Example:
+
+PATCH /songs/123
+
+Update song file for given artist and song with id 123 in the database by sending a JSON object in the body of the request for the data you need updated.
 
     {
         song_audio: String (url)
     }
+
+...producing the same object but with updated song_audio value
 
 ### Response
 
@@ -323,9 +323,9 @@ Update song file for Precipice by Rabbit Junk
 
 ### Request
 
-`DELETE /songs?id=id_value&song_name="imagine"`
+`DELETE /songs/:id`
 
-Can delete a song from the database if you have the correct id and associated song name.
+Delete a song from the database at chosen ID.
 
 
 ### Response

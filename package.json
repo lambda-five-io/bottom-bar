@@ -4,17 +4,19 @@
   "description": "",
   "private": true,
   "dependencies": {
+    "bluebird": "^3.7.2",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "faker": "^4.1.0",
     "flexbox-react": "^4.4.0",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
+    "pg": "^8.0.0",
     "react": "^16.13.0",
     "react-css-modules": "^4.7.11",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "sentencer": "^0.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
@@ -23,7 +25,9 @@
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
     "babel-preset-airbnb": "^4.4.0",
+    "cli-progress": "^3.6.1",
     "css-loader": "^3.4.2",
+    "csv-write-stream": "^2.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
@@ -32,6 +36,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "faker": "^4.1.0",
     "jest": "^25.1.0",
     "jest-environment-enzyme": "^7.1.2",
     "jest-enzyme": "^7.1.2",
@@ -45,7 +50,9 @@
     "start": "nodemon server",
     "seed": "node ./db/dataSeed.js",
     "test": "jest",
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "seedpg": "node ./db/postgresSeed.js",
+    "seedcas": "node ./db/cassandraSeed.js"
   },
   "repository": {
     "type": "git",
