@@ -1,3 +1,5 @@
+require('newrelic');
+
 /* eslint no-console: ["error", { allow: ["log", "error"] }] */
 const express = require('express');
 const mysql = require('mysql');
