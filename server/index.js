@@ -1,29 +1,33 @@
+/* eslint no-console: ["error", { allow: ["log", "error"] }] */
+
+//New Relic analytics
 require('newrelic');
 
-/* eslint no-console: ["error", { allow: ["log", "error"] }] */
+//Server configuration
 const express = require('express');
-const mysql = require('mysql');
-
 const app = express();
 const port = 3131;
 const path = require('path');
-// var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'audiblyBottomPlayer',
-});
-connection.connect();
+//Database connection
+// const connection = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'root',
+//   password: '',
+//   database: 'audiblyBottomPlayer',
+// });
+// connection.connect();
 
-
-
-app.listen(port, () => console.log(`Example app listening on port ${port}`));
-
+app.listen(port, () => console.log(`Audibly BottomPlayer matriculating the core matrix on ${port}`));
 app.use(express.static(path.join(__dirname, '../client/public')));
-
 app.use(require('morgan')('combined')); 
+
+
+
+// ________________________________________________________________________________
+// GET API - fetching songs from DB - primary component functionality
+// ________________________________________________________________________________
 
 app.get('/songs', (req, res) => {
   connection.query('SELECT * FROM songs', (err, data) => {

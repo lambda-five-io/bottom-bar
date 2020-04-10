@@ -1,17 +1,15 @@
 {
   "name": "bottom-player",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Audibly BottomPlayer Component",
   "private": true,
   "dependencies": {
-    "bluebird": "^3.7.2",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "flexbox-react": "^4.4.0",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
     "morgan": "^1.10.0",
-    "mysql": "^2.18.1",
     "pg": "^8.0.0",
     "react": "^16.13.0",
     "react-css-modules": "^4.7.11",
@@ -48,10 +46,11 @@
     "webpack-cli": "^3.3.11"
   },
   "scripts": {
-    "start": "nodemon server",
-    "seed": "node ./db/dataSeed.js",
+    "start": "node server",
+    "start:dev": "nodemon server",
     "test": "jest",
-    "build": "webpack -w",
+    "build": "webpack -p",
+    "react:dev": "webpack -d -w",
     "seedpg": "node ./db/postgresSeed.js",
     "seedcas": "node ./db/cassandraSeed.js"
   },
