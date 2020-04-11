@@ -11,7 +11,7 @@ const writerAlbum = csvWriter();
 const writerSongs = csvWriter();
 
 
-
+//update paths!
 
 //__________________________________________________________________________
 //**********************  ARTISTS  ************************* 
