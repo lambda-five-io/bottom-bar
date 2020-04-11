@@ -19,5 +19,10 @@ app.use(require('morgan')('tiny'));
 // ________________________________________________________________________________
 
 app.get('/songs', fetch.getAll);
+app.get('/songs/:id', fetch.getSongByID);
+app.get('/title', fetch.getSongByName);
+app.get('/artist', fetch.getSongsFromArtist);
+app.get('/album', fetch.getSongsFromAlbum);
+app.get('/genre', fetch.getSongsByGenre);
 
 module.exports = app;
