@@ -2,3 +2,5 @@ todo.txt
 node_modules
 notes.txt
 *.csv
+newrelic_agent.log
+newrelic.js

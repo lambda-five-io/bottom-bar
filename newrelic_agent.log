@@ -1174,3 +1174,394 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":50670,"time":"2020-04-11T03:49:18.259Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
 {"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":50670,"time":"2020-04-11T03:49:18.263Z","msg":"Agent state changed from connected to started."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":50670,"time":"2020-04-11T03:49:19.264Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":56090,"time":"2020-04-11T04:01:15.076Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":56090,"time":"2020-04-11T04:01:15.300Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":56090,"time":"2020-04-11T04:01:15.459Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":56090,"time":"2020-04-11T04:01:15.459Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":56090,"time":"2020-04-11T04:01:17.787Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":56090,"time":"2020-04-11T04:01:17.788Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BaQuu9PcXICSACj5_SfmL2tekUF0AAgBAAAnIQEAANsaAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":56090,"time":"2020-04-11T04:01:17.788Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":56090,"time":"2020-04-11T04:01:17.789Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":56090,"time":"2020-04-11T04:01:17.791Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":56090,"time":"2020-04-11T04:01:18.792Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87217,"time":"2020-04-11T16:50:51.433Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87217,"time":"2020-04-11T16:50:51.746Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87217,"time":"2020-04-11T16:50:51.896Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87217,"time":"2020-04-11T16:50:51.896Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87232,"time":"2020-04-11T16:50:52.503Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87232,"time":"2020-04-11T16:50:52.634Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87232,"time":"2020-04-11T16:50:52.721Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87232,"time":"2020-04-11T16:50:52.722Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87232,"time":"2020-04-11T16:50:55.158Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87232,"time":"2020-04-11T16:50:55.159Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BVquGsPJhAN2ACj5_SfmL2tekfWwAAgBAAAnIQEAAVTAAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87232,"time":"2020-04-11T16:50:55.159Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87232,"time":"2020-04-11T16:50:55.160Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87232,"time":"2020-04-11T16:50:55.161Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":87232,"time":"2020-04-11T16:50:56.163Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88214,"time":"2020-04-11T16:53:00.618Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88214,"time":"2020-04-11T16:53:00.788Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88214,"time":"2020-04-11T16:53:00.898Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88214,"time":"2020-04-11T16:53:00.898Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88214,"time":"2020-04-11T16:53:05.645Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88214,"time":"2020-04-11T16:53:05.645Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BSyIOmzj0ZqCACj5_SfmL2tekfZkAAgBAAAnIQEAAViWAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88214,"time":"2020-04-11T16:53:05.645Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88214,"time":"2020-04-11T16:53:05.646Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88214,"time":"2020-04-11T16:53:05.650Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88214,"time":"2020-04-11T16:53:06.654Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88307,"time":"2020-04-11T16:53:13.662Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88307,"time":"2020-04-11T16:53:13.883Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88307,"time":"2020-04-11T16:53:13.991Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88307,"time":"2020-04-11T16:53:13.991Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88307,"time":"2020-04-11T16:53:16.384Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88307,"time":"2020-04-11T16:53:16.385Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BfiQiHmBC8fSACj5_SfmL2tekfZkAAgBAAAnIQEAAVjzAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88307,"time":"2020-04-11T16:53:16.385Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88307,"time":"2020-04-11T16:53:16.386Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88307,"time":"2020-04-11T16:53:16.390Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88307,"time":"2020-04-11T16:53:17.395Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88485,"time":"2020-04-11T16:53:27.839Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88485,"time":"2020-04-11T16:53:28.006Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88485,"time":"2020-04-11T16:53:28.106Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88485,"time":"2020-04-11T16:53:28.106Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88485,"time":"2020-04-11T16:53:32.172Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88485,"time":"2020-04-11T16:53:32.172Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID Bejty23MLeiHACj5_SfmL2tekfZkAAgBAAAnIQEAAVmlAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88485,"time":"2020-04-11T16:53:32.172Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88485,"time":"2020-04-11T16:53:32.174Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88485,"time":"2020-04-11T16:53:32.176Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":88485,"time":"2020-04-11T16:53:33.179Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97688,"time":"2020-04-11T17:15:35.485Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97688,"time":"2020-04-11T17:15:35.713Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97688,"time":"2020-04-11T17:15:35.891Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97688,"time":"2020-04-11T17:15:35.891Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97710,"time":"2020-04-11T17:15:36.720Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97710,"time":"2020-04-11T17:15:36.919Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97710,"time":"2020-04-11T17:15:37.027Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97710,"time":"2020-04-11T17:15:37.028Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97710,"time":"2020-04-11T17:15:39.238Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97710,"time":"2020-04-11T17:15:39.239Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BXGRUDuIX1YTACj5_SfmL2tekfuMAAgBAAAnIQEAAX2uAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97710,"time":"2020-04-11T17:15:39.239Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97710,"time":"2020-04-11T17:15:39.240Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97710,"time":"2020-04-11T17:15:39.243Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":97710,"time":"2020-04-11T17:15:40.243Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98241,"time":"2020-04-11T17:16:52.369Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98241,"time":"2020-04-11T17:16:52.541Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98241,"time":"2020-04-11T17:16:52.657Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98241,"time":"2020-04-11T17:16:52.658Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98241,"time":"2020-04-11T17:16:54.773Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98241,"time":"2020-04-11T17:16:54.773Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BaUz1KzJSWYBACj5_SfmL2tekfvIAAgBAAAnIQEAAX_BAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98241,"time":"2020-04-11T17:16:54.773Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98241,"time":"2020-04-11T17:16:54.774Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98241,"time":"2020-04-11T17:16:54.777Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98241,"time":"2020-04-11T17:16:55.777Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98449,"time":"2020-04-11T17:17:19.865Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98449,"time":"2020-04-11T17:17:20.058Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98449,"time":"2020-04-11T17:17:20.191Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98449,"time":"2020-04-11T17:17:20.191Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98449,"time":"2020-04-11T17:17:22.592Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98449,"time":"2020-04-11T17:17:22.593Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BeMT7p-alBuAACj5_SfmL2tekfwEAAgBAAAnIQEAAYCRAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98449,"time":"2020-04-11T17:17:22.593Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98449,"time":"2020-04-11T17:17:22.594Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98449,"time":"2020-04-11T17:17:22.596Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98521,"time":"2020-04-11T17:17:23.201Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98521,"time":"2020-04-11T17:17:23.376Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98521,"time":"2020-04-11T17:17:23.497Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98521,"time":"2020-04-11T17:17:23.497Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98521,"time":"2020-04-11T17:17:28.868Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98521,"time":"2020-04-11T17:17:28.868Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BYral0qDJeO4ACj5_SfmL2tekfwEAAgBAAAnIQEAAYDZAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98521,"time":"2020-04-11T17:17:28.868Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98521,"time":"2020-04-11T17:17:28.869Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98521,"time":"2020-04-11T17:17:28.872Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98521,"time":"2020-04-11T17:17:29.872Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98634,"time":"2020-04-11T17:17:42.319Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98634,"time":"2020-04-11T17:17:42.475Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98634,"time":"2020-04-11T17:17:42.580Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98634,"time":"2020-04-11T17:17:42.580Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98634,"time":"2020-04-11T17:17:44.563Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98634,"time":"2020-04-11T17:17:44.563Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BfxVLOXqXwHOACj5_SfmL2tekfwEAAgBAAAnIQEAAYFKAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98634,"time":"2020-04-11T17:17:44.563Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98634,"time":"2020-04-11T17:17:44.564Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98634,"time":"2020-04-11T17:17:44.566Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98634,"time":"2020-04-11T17:17:45.566Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98933,"time":"2020-04-11T17:18:16.623Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98933,"time":"2020-04-11T17:18:16.795Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98933,"time":"2020-04-11T17:18:16.898Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98933,"time":"2020-04-11T17:18:16.898Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98933,"time":"2020-04-11T17:18:18.983Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98933,"time":"2020-04-11T17:18:18.983Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BTmALz_Xn75aACj5_SfmL2tekfxAAAgBAAAnIQEAAYJ1AgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98933,"time":"2020-04-11T17:18:18.983Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98933,"time":"2020-04-11T17:18:18.985Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98933,"time":"2020-04-11T17:18:18.989Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":98933,"time":"2020-04-11T17:18:19.989Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99093,"time":"2020-04-11T17:18:44.597Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99093,"time":"2020-04-11T17:18:44.744Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99093,"time":"2020-04-11T17:18:44.850Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99093,"time":"2020-04-11T17:18:44.850Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99093,"time":"2020-04-11T17:18:46.855Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99093,"time":"2020-04-11T17:18:46.856Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BVQRCXu_dwmvACj5_SfmL2tekfxAAAgBAAAnIQEAAYMVAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99093,"time":"2020-04-11T17:18:46.856Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99093,"time":"2020-04-11T17:18:46.857Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99093,"time":"2020-04-11T17:18:46.860Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99093,"time":"2020-04-11T17:18:47.860Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99323,"time":"2020-04-11T17:19:12.513Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99323,"time":"2020-04-11T17:19:12.676Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99323,"time":"2020-04-11T17:19:12.797Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99323,"time":"2020-04-11T17:19:12.797Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99323,"time":"2020-04-11T17:19:14.820Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99323,"time":"2020-04-11T17:19:14.820Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BXxT-QaSnwkVACj5_SfmL2tekfx8AAgBAAAnIQEAAYP7AgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99323,"time":"2020-04-11T17:19:14.820Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99323,"time":"2020-04-11T17:19:14.822Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99323,"time":"2020-04-11T17:19:14.824Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99344,"time":"2020-04-11T17:19:15.261Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99344,"time":"2020-04-11T17:19:15.451Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99344,"time":"2020-04-11T17:19:15.578Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99344,"time":"2020-04-11T17:19:15.578Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99344,"time":"2020-04-11T17:19:17.647Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99344,"time":"2020-04-11T17:19:17.648Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BfnfvF_aIRivACj5_SfmL2tekfx8AAgBAAAnIQEAAYQQAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99344,"time":"2020-04-11T17:19:17.648Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99344,"time":"2020-04-11T17:19:17.649Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99344,"time":"2020-04-11T17:19:17.652Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99344,"time":"2020-04-11T17:19:18.655Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99503,"time":"2020-04-11T17:19:33.926Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99503,"time":"2020-04-11T17:19:34.132Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99503,"time":"2020-04-11T17:19:34.270Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99503,"time":"2020-04-11T17:19:34.270Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99503,"time":"2020-04-11T17:19:36.428Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99503,"time":"2020-04-11T17:19:36.429Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BUlhnnyObmFzACj5_SfmL2tekfx8AAgBAAAnIQEAAYSvAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99503,"time":"2020-04-11T17:19:36.429Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99503,"time":"2020-04-11T17:19:36.430Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99503,"time":"2020-04-11T17:19:36.433Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99503,"time":"2020-04-11T17:19:37.434Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99812,"time":"2020-04-11T17:20:13.643Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99812,"time":"2020-04-11T17:20:13.870Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99812,"time":"2020-04-11T17:20:14.010Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99812,"time":"2020-04-11T17:20:14.010Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99812,"time":"2020-04-11T17:20:16.099Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99812,"time":"2020-04-11T17:20:16.099Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BRGjW3mpMFydACj5_SfmL2tekfy4AAgBAAAnIQEAAYXkAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99812,"time":"2020-04-11T17:20:16.099Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99812,"time":"2020-04-11T17:20:16.100Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99812,"time":"2020-04-11T17:20:16.103Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":99812,"time":"2020-04-11T17:20:17.104Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":357,"time":"2020-04-11T17:21:03.444Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":357,"time":"2020-04-11T17:21:03.804Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":357,"time":"2020-04-11T17:21:03.910Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":357,"time":"2020-04-11T17:21:03.910Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":383,"time":"2020-04-11T17:21:07.770Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":383,"time":"2020-04-11T17:21:08.046Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":383,"time":"2020-04-11T17:21:08.156Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":383,"time":"2020-04-11T17:21:08.156Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":383,"time":"2020-04-11T17:21:11.232Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":383,"time":"2020-04-11T17:21:11.233Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BahQL-O66X1QACj5_SfmL2tekfz0AAgBAAAnIQEAAAF_AgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":383,"time":"2020-04-11T17:21:11.233Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":383,"time":"2020-04-11T17:21:11.234Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":383,"time":"2020-04-11T17:21:11.236Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":383,"time":"2020-04-11T17:21:12.237Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":955,"time":"2020-04-11T17:22:12.879Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":955,"time":"2020-04-11T17:22:13.128Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":955,"time":"2020-04-11T17:22:13.369Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":955,"time":"2020-04-11T17:22:13.370Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":955,"time":"2020-04-11T17:22:15.991Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":955,"time":"2020-04-11T17:22:15.991Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BWpTsg-T_zjYACj5_SfmL2tekf0wAAgBAAAnIQEAAAO7AgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":955,"time":"2020-04-11T17:22:15.991Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":955,"time":"2020-04-11T17:22:15.993Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":955,"time":"2020-04-11T17:22:15.995Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":955,"time":"2020-04-11T17:22:17.000Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1659,"time":"2020-04-11T17:23:35.827Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1659,"time":"2020-04-11T17:23:36.168Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1659,"time":"2020-04-11T17:23:36.356Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1659,"time":"2020-04-11T17:23:36.356Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1659,"time":"2020-04-11T17:23:38.945Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1659,"time":"2020-04-11T17:23:38.946Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BUXhWFLfFHPyACj5_SfmL2tekf1sAAgBAAAnIQEAAAZ7AgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1659,"time":"2020-04-11T17:23:38.946Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1659,"time":"2020-04-11T17:23:38.947Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1659,"time":"2020-04-11T17:23:38.950Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1659,"time":"2020-04-11T17:23:39.956Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1757,"time":"2020-04-11T17:23:49.700Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1757,"time":"2020-04-11T17:23:50.068Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1757,"time":"2020-04-11T17:23:50.173Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1757,"time":"2020-04-11T17:23:50.173Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1757,"time":"2020-04-11T17:23:52.255Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1757,"time":"2020-04-11T17:23:52.255Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BeVXzMmmKztUACj5_SfmL2tekf1sAAgBAAAnIQEAAAbdAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1757,"time":"2020-04-11T17:23:52.255Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1757,"time":"2020-04-11T17:23:52.257Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1757,"time":"2020-04-11T17:23:52.259Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1757,"time":"2020-04-11T17:23:53.259Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1859,"time":"2020-04-11T17:24:02.415Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1859,"time":"2020-04-11T17:24:02.611Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1859,"time":"2020-04-11T17:24:02.760Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1859,"time":"2020-04-11T17:24:02.760Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1859,"time":"2020-04-11T17:24:05.074Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1859,"time":"2020-04-11T17:24:05.074Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BbiV2bPtKPziACj5_SfmL2tekf2oAAgBAAAnIQEAAAdDAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1859,"time":"2020-04-11T17:24:05.074Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1859,"time":"2020-04-11T17:24:05.076Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1859,"time":"2020-04-11T17:24:05.078Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":1859,"time":"2020-04-11T17:24:06.079Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2454,"time":"2020-04-11T17:25:22.379Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2454,"time":"2020-04-11T17:25:22.728Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2454,"time":"2020-04-11T17:25:22.838Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2454,"time":"2020-04-11T17:25:22.838Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2454,"time":"2020-04-11T17:25:25.205Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2454,"time":"2020-04-11T17:25:25.205Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BbgXDNmFVqQUACj5_SfmL2tekf3kAAgBAAAnIQEAAAmWAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2454,"time":"2020-04-11T17:25:25.205Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2454,"time":"2020-04-11T17:25:25.207Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2454,"time":"2020-04-11T17:25:25.209Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2454,"time":"2020-04-11T17:25:26.210Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2768,"time":"2020-04-11T17:26:02.656Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2768,"time":"2020-04-11T17:26:03.061Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2768,"time":"2020-04-11T17:26:03.196Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2768,"time":"2020-04-11T17:26:03.197Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2768,"time":"2020-04-11T17:26:05.337Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2768,"time":"2020-04-11T17:26:05.338Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BWlFh5zhXNBrACj5_SfmL2tekf4gAAgBAAAnIQEAAArQAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2768,"time":"2020-04-11T17:26:05.338Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2768,"time":"2020-04-11T17:26:05.339Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2768,"time":"2020-04-11T17:26:05.342Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2768,"time":"2020-04-11T17:26:06.344Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2933,"time":"2020-04-11T17:26:23.646Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2933,"time":"2020-04-11T17:26:23.983Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2933,"time":"2020-04-11T17:26:24.137Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2933,"time":"2020-04-11T17:26:24.137Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2933,"time":"2020-04-11T17:26:26.668Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2933,"time":"2020-04-11T17:26:26.668Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BYKS-GS0rmxbACj5_SfmL2tekf4gAAgBAAAnIQEAAAt1AgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2933,"time":"2020-04-11T17:26:26.668Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2933,"time":"2020-04-11T17:26:26.670Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2933,"time":"2020-04-11T17:26:26.672Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":2933,"time":"2020-04-11T17:26:27.673Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3314,"time":"2020-04-11T17:27:11.325Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3314,"time":"2020-04-11T17:27:11.517Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3314,"time":"2020-04-11T17:27:11.727Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3314,"time":"2020-04-11T17:27:11.727Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3314,"time":"2020-04-11T17:27:13.949Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3314,"time":"2020-04-11T17:27:13.949Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BVITusTJ4W_nACj5_SfmL2tekf5cAAgBAAAnIQEAAAzyAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3314,"time":"2020-04-11T17:27:13.949Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3314,"time":"2020-04-11T17:27:13.951Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3314,"time":"2020-04-11T17:27:13.953Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3314,"time":"2020-04-11T17:27:14.958Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3548,"time":"2020-04-11T17:27:42.155Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3548,"time":"2020-04-11T17:27:42.315Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3548,"time":"2020-04-11T17:27:42.544Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3548,"time":"2020-04-11T17:27:42.544Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3548,"time":"2020-04-11T17:27:45.050Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3548,"time":"2020-04-11T17:27:45.050Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BYu_yzbKXTG6ACj5_SfmL2tekf5cAAgBAAAnIQEAAA3cAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3548,"time":"2020-04-11T17:27:45.051Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3548,"time":"2020-04-11T17:27:45.052Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3548,"time":"2020-04-11T17:27:45.054Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3548,"time":"2020-04-11T17:27:46.058Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3715,"time":"2020-04-11T17:28:05.895Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3715,"time":"2020-04-11T17:28:06.086Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3715,"time":"2020-04-11T17:28:06.269Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3715,"time":"2020-04-11T17:28:06.270Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3715,"time":"2020-04-11T17:28:08.646Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3715,"time":"2020-04-11T17:28:08.646Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BYUMVEi4jZWLACj5_SfmL2tekf6YAAgBAAAnIQEAAA6DAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3715,"time":"2020-04-11T17:28:08.646Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3715,"time":"2020-04-11T17:28:08.647Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3715,"time":"2020-04-11T17:28:08.651Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3739,"time":"2020-04-11T17:28:08.622Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3739,"time":"2020-04-11T17:28:08.793Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3739,"time":"2020-04-11T17:28:08.918Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3739,"time":"2020-04-11T17:28:08.918Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":3715,"time":"2020-04-11T17:28:09.653Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":4638,"time":"2020-04-11T17:30:11.791Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":4638,"time":"2020-04-11T17:30:11.943Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":4638,"time":"2020-04-11T17:30:12.054Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":4638,"time":"2020-04-11T17:30:12.054Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":4638,"time":"2020-04-11T17:30:14.337Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":4638,"time":"2020-04-11T17:30:14.338Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BSrQVrT-SW6UACj5_SfmL2tekf8QAAgBAAAnIQEAABIeAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":4638,"time":"2020-04-11T17:30:14.338Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":4638,"time":"2020-04-11T17:30:14.340Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":4638,"time":"2020-04-11T17:30:14.343Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":4638,"time":"2020-04-11T17:30:15.347Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5550,"time":"2020-04-11T17:32:10.021Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5550,"time":"2020-04-11T17:32:10.271Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5550,"time":"2020-04-11T17:32:10.411Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5550,"time":"2020-04-11T17:32:10.411Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5550,"time":"2020-04-11T17:32:13.184Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5550,"time":"2020-04-11T17:32:13.184Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BeGga-PApTX1ACj5_SfmL2tekf-IAAgBAAAnIQEAABWuAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5550,"time":"2020-04-11T17:32:13.184Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5550,"time":"2020-04-11T17:32:13.185Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5550,"time":"2020-04-11T17:32:13.188Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5550,"time":"2020-04-11T17:32:14.193Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5714,"time":"2020-04-11T17:32:32.541Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5714,"time":"2020-04-11T17:32:32.705Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5714,"time":"2020-04-11T17:32:32.825Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5714,"time":"2020-04-11T17:32:32.825Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5714,"time":"2020-04-11T17:32:35.284Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5714,"time":"2020-04-11T17:32:35.284Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BQbRc9KQrwRzACj5_SfmL2tekf-IAAgBAAAnIQEAABZSAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5714,"time":"2020-04-11T17:32:35.284Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5714,"time":"2020-04-11T17:32:35.286Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5714,"time":"2020-04-11T17:32:35.289Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5714,"time":"2020-04-11T17:32:36.290Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5951,"time":"2020-04-11T17:33:06.307Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5951,"time":"2020-04-11T17:33:06.603Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5951,"time":"2020-04-11T17:33:06.729Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5951,"time":"2020-04-11T17:33:06.729Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5951,"time":"2020-04-11T17:33:10.390Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5951,"time":"2020-04-11T17:33:10.390Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BfnEW_nJcmbrACj5_SfmL2tekf_EAAgBAAAnIQEAABc_AgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5951,"time":"2020-04-11T17:33:10.390Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5951,"time":"2020-04-11T17:33:10.392Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5951,"time":"2020-04-11T17:33:10.395Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":5951,"time":"2020-04-11T17:33:11.395Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6260,"time":"2020-04-11T17:33:44.782Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6260,"time":"2020-04-11T17:33:45.037Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6260,"time":"2020-04-11T17:33:45.173Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6260,"time":"2020-04-11T17:33:45.173Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6260,"time":"2020-04-11T17:33:50.648Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6260,"time":"2020-04-11T17:33:50.648Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID Bfbclhihnz3uACj5_SfmL2tekf_EAAgBAAAnIQEAABh0AgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6260,"time":"2020-04-11T17:33:50.648Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6260,"time":"2020-04-11T17:33:50.650Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6260,"time":"2020-04-11T17:33:50.652Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6260,"time":"2020-04-11T17:33:51.653Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6409,"time":"2020-04-11T17:34:02.148Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6409,"time":"2020-04-11T17:34:02.306Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6409,"time":"2020-04-11T17:34:02.425Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6409,"time":"2020-04-11T17:34:02.425Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6409,"time":"2020-04-11T17:34:04.531Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6409,"time":"2020-04-11T17:34:04.531Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID Bd6NVRHpwIcXACj5_SfmL2tekgAAAAgBAAAnIQEAABkJAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6409,"time":"2020-04-11T17:34:04.532Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6409,"time":"2020-04-11T17:34:04.533Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6409,"time":"2020-04-11T17:34:04.535Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6409,"time":"2020-04-11T17:34:05.536Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6871,"time":"2020-04-11T17:35:10.964Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6871,"time":"2020-04-11T17:35:11.123Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6871,"time":"2020-04-11T17:35:11.237Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6871,"time":"2020-04-11T17:35:11.237Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6871,"time":"2020-04-11T17:35:13.401Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6871,"time":"2020-04-11T17:35:13.401Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID Bfn1LxTdKVaeACj5_SfmL2tekgA8AAgBAAAnIQEAABrXAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6871,"time":"2020-04-11T17:35:13.401Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6871,"time":"2020-04-11T17:35:13.402Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6871,"time":"2020-04-11T17:35:13.404Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":6871,"time":"2020-04-11T17:35:14.405Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7450,"time":"2020-04-11T17:36:23.901Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7450,"time":"2020-04-11T17:36:24.083Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7450,"time":"2020-04-11T17:36:24.210Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7450,"time":"2020-04-11T17:36:24.210Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7450,"time":"2020-04-11T17:36:26.382Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7450,"time":"2020-04-11T17:36:26.382Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BbexR0WLFEjaACj5_SfmL2tekgB4AAgBAAAnIQEAAB0aAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7450,"time":"2020-04-11T17:36:26.382Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7450,"time":"2020-04-11T17:36:26.383Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7450,"time":"2020-04-11T17:36:26.386Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7851,"time":"2020-04-11T17:37:15.574Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7851,"time":"2020-04-11T17:37:15.757Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7851,"time":"2020-04-11T17:37:15.886Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7851,"time":"2020-04-11T17:37:15.886Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7851,"time":"2020-04-11T17:37:18.052Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7851,"time":"2020-04-11T17:37:18.052Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BQ0uoNbUOwzzACj5_SfmL2tekgC0AAgBAAAnIQEAAB6rAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7851,"time":"2020-04-11T17:37:18.052Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7851,"time":"2020-04-11T17:37:18.053Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7851,"time":"2020-04-11T17:37:18.056Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":7851,"time":"2020-04-11T17:37:19.056Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8234,"time":"2020-04-11T17:38:04.006Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8234,"time":"2020-04-11T17:38:04.182Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8234,"time":"2020-04-11T17:38:04.307Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8234,"time":"2020-04-11T17:38:04.307Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8234,"time":"2020-04-11T17:38:06.376Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8234,"time":"2020-04-11T17:38:06.376Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BRozH57JLem3ACj5_SfmL2tekgDwAAgBAAAnIQEAACAqAgQn5i9pAwAFNi41LjAAC0dlaXN0LmxvY2FsAAxCb3R0b21QbGF5ZXI.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8234,"time":"2020-04-11T17:38:06.376Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2685437/applications/669396841","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8234,"time":"2020-04-11T17:38:06.377Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8234,"time":"2020-04-11T17:38:06.380Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8234,"time":"2020-04-11T17:38:07.381Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8702,"time":"2020-04-11T17:38:59.849Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8702,"time":"2020-04-11T17:39:00.028Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8702,"time":"2020-04-11T17:39:00.145Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":8702,"time":"2020-04-11T17:39:00.145Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":9925,"time":"2020-04-11T17:41:42.210Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v13.12.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":9925,"time":"2020-04-11T17:41:42.455Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":9925,"time":"2020-04-11T17:41:42.602Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Geist.local","pid":9925,"time":"2020-04-11T17:41:42.602Z","msg":"Agent state changed from starting to connecting."}

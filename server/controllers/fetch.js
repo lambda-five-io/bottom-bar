@@ -6,7 +6,6 @@ exports.getAll = (req, res) => {
     cassandra.client.execute(query)
       .then(result => {
     
-        console.log(result);
         res.send(result);
       });
   }
