@@ -4,3 +4,5 @@ notes.txt
 *.csv
 newrelic_agent.log
 newrelic.js
+k6singleSong.js
+k6albumSongs.js

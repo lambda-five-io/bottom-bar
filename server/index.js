@@ -16,7 +16,6 @@ app.use(require('morgan')('tiny'));
 
 // ________________________________________________________________________________
 // GET API - fetching songs from DB - primary component functionality
-// ________________________________________________________________________________
 
 app.get('/songs', fetch.getAll);
 app.get('/songs/:id', fetch.getSongByID);
@@ -24,5 +23,18 @@ app.get('/title', fetch.getSongByName);
 app.get('/artist', fetch.getSongsFromArtist);
 app.get('/album', fetch.getSongsFromAlbum);
 app.get('/genre', fetch.getSongsByGenre);
+
+// ________________________________________________________________________________
+
+
+// ________________________________________________________________________________
+
+
+
+// Experimental API - for testing and dev
+
+app.get('/getalbums', fetch.getAlbums);
+
+// ________________________________________________________________________________
 
 module.exports = app;

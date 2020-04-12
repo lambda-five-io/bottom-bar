@@ -60,3 +60,18 @@ exports.getAll = (req, res) => {
         res.send(result);
       });
   }
+
+  exports.getAlbums = (req, res) => {
+
+    const query = `SELECT * FROM songs limit 90`;
+    cassandra.client.execute(query)
+      .then(result => {
+        let albums = [];
+        const songs = result.rows;
+        for (let i = 0; i < songs.length; i++) {
+            albums.push(songs[i]['album']);
+        }
+        console.log(albums);
+        res.send(albums);
+      });
+  }
