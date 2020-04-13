@@ -33,7 +33,9 @@ app.get('/genre', fetch.getSongsByGenre);
 
 // Experimental API - for testing and dev
 
-app.get('/getalbums', fetch.getAlbums);
+app.get('/samples/albums', fetch.getSampleAlbums);
+app.get('/samples/artists', fetch.getSampleArtists);
+app.get('/samples/songs', fetch.getSampleTitles);
 
 // ________________________________________________________________________________
 
