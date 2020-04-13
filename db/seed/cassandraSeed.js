@@ -2,8 +2,6 @@ const csvWriter = require('csv-write-stream');
 const faker = require('faker');
 const fs = require('fs');
 const Sentencer = require('sentencer');
-const Promise = require('bluebird');
-Promise.promisifyAll(fs);
 
 // _________________________________________________________________
 // enable writing mock data to csv file exported to Cassandra db later
@@ -15,6 +13,7 @@ const writerSongsByAlbum = csvWriter();
 const writerSongsByArtist = csvWriter();
 const writerSongsByGenre = csvWriter();
 
+//update paths!
 writerSongs.pipe(fs.createWriteStream('./db/CSV/Cassandra/songTableCAS.csv'));
 writerSongsByAlbum.pipe(fs.createWriteStream('./db/CSV/Cassandra/albumTableCAS.csv'));
 writerSongsByArtist.pipe(fs.createWriteStream('./db/CSV/Cassandra/artistTableCAS.csv'));

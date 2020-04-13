@@ -1,36 +1,40 @@
-/* eslint no-console: ["error", { allow: ["log", "error"] }] */
-const express = require('express');
-const mysql = require('mysql');
+//New Relic analytics
+require('newrelic');
 
+//Server configuration
+const express = require('express');
 const app = express();
 const port = 3131;
 const path = require('path');
-// var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
+const fetch = require('./controllers/fetch.js')
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'audiblyBottomPlayer',
-});
-connection.connect();
-
-
-
-app.listen(port, () => console.log(`Example app listening on port ${port}`));
-
+app.listen(port, () => console.log(`\nAudibly BottomPlayer gyrosyncopating the core matrix on ${port}\n........`));
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../client/public')));
+app.use(require('morgan')('tiny')); 
 
-app.use(require('morgan')('combined')); 
+// ________________________________________________________________________________
+// GET API - fetching songs from DB - primary component functionality
 
-app.get('/songs', (req, res) => {
-  connection.query('SELECT * FROM songs', (err, data) => {
-    if (err) {
-      console.error('error getting data from db: ', err);
-    } else {
-      res.send(data);
-    }
-  });
+app.get('/songs', fetch.getAll);
+app.get('/songs/:id', fetch.getSongByID);
+app.get('/title', fetch.getSongByName);
+app.get('/artist', fetch.getSongsFromArtist);
+app.get('/album', fetch.getSongsFromAlbum);
+app.get('/genre', fetch.getSongsByGenre);
 
-  // connection.end();
-});
+// ________________________________________________________________________________
+
+
+// ________________________________________________________________________________
+
+
+
+// Experimental API - for testing and dev
+
+app.get('/getalbums', fetch.getAlbums);
+
+// ________________________________________________________________________________
+
+module.exports = app;
