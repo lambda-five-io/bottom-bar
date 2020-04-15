@@ -56,8 +56,8 @@
     "test:frontend": "jest",
     "build": "webpack -p",
     "react:dev": "webpack -d -w",
-    "seedpg": "node ./db/postgresSeed.js",
-    "seedcas": "node ./db/cassandraSeed.js"
+    "seedpg": "node ./db/seed/postgresSeed.js",
+    "seedcas": "node ./db/seed/cassandraSeed.js"
   },
   "repository": {
     "type": "git",

@@ -22,7 +22,7 @@ const artistGen = () => {
     console.log('\x1b[37m%s\x1b[0m: ', 'Initialize Artist Table Seed');
     console.time('Time');
 
-    const writeable = fs.createWriteStream('./db/CSV/PostgreSQL/artistTable.csv');
+    const writeable = fs.createWriteStream('./db/seed/CSV/PostgreSQL/artistTable.csv');
     writerArtist.pipe(writeable);
 
     //PROGRESS
@@ -98,7 +98,7 @@ const albumGen = () => {
     console.log('\x1b[37m%s\x1b[0m: ', 'Initialize Album Table Seed');
     console.time('Time');
 
-    const writeable = fs.createWriteStream('./db/CSV/PostgreSQL/albumTable.csv');
+    const writeable = fs.createWriteStream('./db/seed/CSV/PostgreSQL/albumTable.csv');
     writerAlbum.pipe(writeable);
 
     //PROGRESS
@@ -183,7 +183,7 @@ const songGen = () => {
     console.log('\x1b[37m%s\x1b[0m: ', 'Initialize Song Table Seed');
     console.time('Time');
 
-    const writeable = fs.createWriteStream('./db/CSV/PostgreSQL/songTable.csv');
+    const writeable = fs.createWriteStream('./db/seed/CSV/PostgreSQL/songTable.csv');
     writerSongs.pipe(writeable);
 
     //PROGRESS

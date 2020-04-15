@@ -14,10 +14,10 @@ const writerSongsByArtist = csvWriter();
 const writerSongsByGenre = csvWriter();
 
 //update paths!
-writerSongs.pipe(fs.createWriteStream('./db/CSV/Cassandra/songTableCAS.csv'));
-writerSongsByAlbum.pipe(fs.createWriteStream('./db/CSV/Cassandra/albumTableCAS.csv'));
-writerSongsByArtist.pipe(fs.createWriteStream('./db/CSV/Cassandra/artistTableCAS.csv'));
-writerSongsByGenre.pipe(fs.createWriteStream('./db/CSV/Cassandra/genreTableCAS.csv'));
+writerSongs.pipe(fs.createWriteStream('./db/seed/CSV/Cassandra/songTableCAS.csv'));
+writerSongsByAlbum.pipe(fs.createWriteStream('./db/seed/CSV/Cassandra/albumTableCAS.csv'));
+writerSongsByArtist.pipe(fs.createWriteStream('./db/seed/CSV/Cassandra/artistTableCAS.csv'));
+writerSongsByGenre.pipe(fs.createWriteStream('./db/seed/CSV/Cassandra/genreTableCAS.csv'));
 
 const cassandraGen = () => {
 
@@ -58,8 +58,8 @@ const cassandraGen = () => {
                 //songType1 construct
                 const prefix = capitalize(faker.lorem.word());
 
-                const chooseMiddle = Math.floor(Math.random() * 5);
-                const middles = ['in the', 'a', 'towards', 'for my']
+                const chooseMiddle = Math.floor(Math.random() * 9);
+                const middles = ['in the', 'the', 'a', 'Towards', 'for My', 'Hacking', 'Grinding', 'Forever', 'to a New'];
                 const middle = middles[chooseMiddle];
 
                 const noun = capitalize(Sentencer.make("{{ noun }}"));
@@ -78,13 +78,13 @@ const cassandraGen = () => {
 
             getSongImage = () => {
                 const numPadded = (k%900).toString().padStart(3, '0');
-                const songImage = 'https://audibly-bp.s3-us-west-1.amazonaws.com/' + numPadded + '.jpg';
+                const songImage = 'https://audibly-bottom-player-songjpegs.s3-us-west-1.amazonaws.com/' + numPadded + '.jpg';
                 return songImage;
             }
 
             getSongAudio = () => {
                 const numPadded = (k%900).toString().padStart(3, '0');
-                const songAudio = 'https://audibly-bp.s3-us-west-1.amazonaws.com/' + numPadded + '.mp3';
+                const songAudio = 'https://audibly-bottom-player-songwavs.s3-us-west-1.amazonaws.com/' + numPadded + '.wav';
                 return songAudio;
             }
 
@@ -110,7 +110,7 @@ const cassandraGen = () => {
 
             getGenre = () => {
                 //randomly choose genre
-                const genres = ['punk', 'metal', 'electronica', 'hardcore punk', 'pop', 'hip hop', 'new wave', 'jazz', 'blues', 'R&B', 'classical', 'rock', 'indie rock', 'mathcore', 'folk', 'country', 'ska', 'grunge', 'trance', 'soul'];
+                const genres = ['punk', 'metal', 'electronica', 'hardcore Punk', 'pop', 'hip Hop', 'new Wave', 'jazz', 'blues', 'R&B', 'classical', 'rock', 'indie Rock', 'mathcore', 'folk', 'country', 'ska', 'grunge', 'trance', 'soul'];
                 let chooseGenre = Math.floor(Math.random() * 20);
                 let genre = capitalize(genres[chooseGenre]);
                 return genre;
