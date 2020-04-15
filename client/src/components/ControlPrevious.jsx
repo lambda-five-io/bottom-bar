@@ -1,6 +1,6 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import styles from './ControlPrevious.css';
+import styles from './CSS/ControlPrevious.css';
 
 class ControlPrevious extends React.Component {
   constructor(props) {
@@ -14,8 +14,8 @@ class ControlPrevious extends React.Component {
 
   render() {
     return (
-      <div className="prev">
-        <button type="button" id="prevbtn" onClick={this.handleClick} disabled={this.props.disabled}>PREV</button>
+      <div>
+        <button className="fuller-button blue" type="button" id="prevbtn" onClick={this.handleClick} disabled={this.props.disabled}>PREV</button>
       </div>
     );
   }

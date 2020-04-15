@@ -1,6 +1,6 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import styles from './ControlPlay.css';
+import styles from './CSS/ControlPlay.css';
 
 class ControlPlay extends React.Component {
   constructor(props) {
@@ -16,13 +16,13 @@ class ControlPlay extends React.Component {
     if (this.props.isPlaying === true) {
       return (
         <div>
-          <button type="button" id="playbtn" onClick={this.handleClick}>PAUSE</button>
+          <button className="fuller-button white" type="button" id="playbtn" onClick={this.handleClick}>PAUSE</button>
         </div>
       );
     } else {
       return (
         <div>
-          <button type="button" id="playbtn" onClick={this.handleClick}>PLAY</button>
+          <button className="fuller-button white" type="button" id="playbtn" onClick={this.handleClick}>PLAY</button>
         </div>
       );
     }

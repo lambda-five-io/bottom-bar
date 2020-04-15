@@ -7,7 +7,7 @@ import ControlNext from './ControlNext.jsx';
 import ControlPrevious from './ControlPrevious.jsx';
 import Timeline from './Timeline.jsx';
 import Avatar from './Avatar.jsx';
-import styles from './App.css';
+import styles from './CSS/App.css';
 import AudioManager from './AudioManager.jsx';
 
 
@@ -34,7 +34,7 @@ class App extends React.Component {
   getSongs() {
     $.get('/songs')
       .done((data) => {
-        this.setState({ songs: data });
+        this.setState({ songs: data.rows });
       })
       .fail(() => {
         console.error('error getting songs');
