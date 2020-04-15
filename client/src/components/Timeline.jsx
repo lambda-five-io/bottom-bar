@@ -1,4 +1,6 @@
 import React from 'react';
+import CSSModules from 'react-css-modules';
+import styles from './CSS/Timeline.css';
 
 class Timeline extends React.Component {
   render() {
@@ -12,7 +14,7 @@ class Timeline extends React.Component {
    
     return (
       <div>
-        <p>{audioTime}</p>
+        <p className="timeline">{audioTime}</p>
       </div>
 
     );

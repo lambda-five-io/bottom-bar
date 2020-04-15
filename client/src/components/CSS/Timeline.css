@@ -1,0 +1,17 @@
+.flex-grid-center {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin: 5em 0;
+  }
+  
+  .timeline {
+    color: white;
+    background: none;
+    border-radius: 0;
+    padding: 0.3em 2.7em;
+    letter-spacing: 0.45em;
+    font-size: 1.3em;
+    width: 1em;
+  }

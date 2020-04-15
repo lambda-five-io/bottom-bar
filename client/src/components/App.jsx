@@ -74,16 +74,18 @@ class App extends React.Component {
           index={this.state.currentIndex}
           setPrevSong={this.prevSong}
         />
-        <ControlPlay 
-          isPlaying={this.state.isPlaying} 
-          setIsPlaying={this.setIsPlaying} 
-        />
+        <div>
+          <ControlPlay 
+            isPlaying={this.state.isPlaying} 
+            setIsPlaying={this.setIsPlaying} 
+          />
+          <Timeline currentTime={this.state.currentTime} />
+        </div>
         <ControlNext 
           disabled={this.state.currentIndex === this.state.songs.length - 1}
           index={this.state.currentIndex} 
           setNextSong={this.nextSong}
         />
-        <Timeline currentTime={this.state.currentTime} />
         <Avatar song={this.state.currentSong} />
         <SongInfo song={this.state.currentSong} />
       </div>

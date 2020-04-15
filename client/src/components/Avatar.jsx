@@ -1,15 +1,16 @@
 import React from 'react';
+import CSSModules from 'react-css-modules';
+import styles from './CSS/Avatar.css';
 
 const Avatar = (props) => {
   if (props.song) {
     var imgUrl = props.song.song_image;
   } else {
-    var imgUrl = null;
+    var imgUrl = 'https://cdn.freebiesupply.com/logos/thumbs/2x/react-1-logo.png';
   }
   return (
     <div>
       <img src={imgUrl}></img>
-      {/* <img src="https://i.picsum.photos/id/1072/50/50.jpg"></img> */}
     </div>
   )};
 
