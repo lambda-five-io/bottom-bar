@@ -1,0 +1,22 @@
+.songAwesome {
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, right top, from(#84e6e6), to(#e8e6eb));
+    background: linear-gradient(to right, #81ebeb 0%, #e6e2eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+    margin-bottom: 4px;
+    font-family: "Poppins", sans-serif;
+}
+
+.bonus {
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, right top, from(#d892df), to(#fcf8f9));
+    background: linear-gradient(to right, #f2f1f5 0%, #f0eced 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+    margin-bottom: 4px;
+    margin-left: 80px;
+    font-family: "Poppins", sans-serif;
+}

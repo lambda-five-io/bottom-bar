@@ -1,4 +1,6 @@
 import React from 'react';
+import CSSModules from 'react-css-modules';
+import styles from './CSS/ControlNext.css';
 
 class ControlNext extends React.Component {
   constructor(props) {
@@ -13,7 +15,7 @@ class ControlNext extends React.Component {
   render() {
     return (
       <div>
-        <button type="button" id="nextbtn" onClick={this.handleClick} disabled={this.props.disabled}>NEXT</button>
+        <button className="fuller-button blue" type="button" id="nextbtn" onClick={this.handleClick} disabled={this.props.disabled}>NEXT</button>
       </div>
     );
   }

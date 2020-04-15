@@ -1,0 +1,18 @@
+.app {
+  text-size-adjust: none;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 12px;
+  color: whitesmoke;
+  line-height: 16.8px;
+  padding: 6px 20px 30px;
+  background: #f2f2f2;
+  border: 1px solid #cecece;
+  height: 97px;
+  display: flex;
+  flex-direction: row;
+
+  background-image: url('https://cdn.hipwallpaper.com/i/28/19/RE5lbz.jpg');  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

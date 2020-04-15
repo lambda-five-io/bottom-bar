@@ -1,0 +1,19 @@
+body {
+    background-image: url('https://img.lovepik.com/photo/40022/6761.jpg_wh860.jpg');
+    background-position: center;
+    text-size-adjust: none;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 24px;
+    color: whitesmoke;
+
+}
+
+.text {
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, right top, from(#30cfd0), to(#330867));
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 9vw;
+  font-family: "Poppins", sans-serif;
+}
