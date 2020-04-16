@@ -36,7 +36,7 @@ class AudioManager extends React.Component {
 
   render() {
     if (this.props.song) {
-      var audioUrl = this.props.song.song_audio;
+      var audioUrl = 'https://audibly-bottom-player-songwavs.s3-us-west-1.amazonaws.com/' + this.props.song.song_audio + '.wav';
     } else {
       var audioUrl = null;
     }

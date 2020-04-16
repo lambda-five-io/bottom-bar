@@ -2,8 +2,8 @@ CREATE KEYSPACE IF NOT EXISTS audiblyBottomPlayer WITH REPLICATION = { 'class' :
 
 USE audiblyBottomPlayer;
 
-CREATE TABLE songs (id int PRIMARY KEY, song_name text, song_image text, song_audio text, artist text, genre text, album text, upload_date DATE);
-CREATE TABLE songs_by_album (album text, song_name text, song_image text, song_audio text, artist text, genre text, upload_date DATE, PRIMARY KEY ((album), song_name));
-CREATE TABLE songs_by_artist (artist text, song_name text, song_image text, song_audio text, genre text, album text, upload_date DATE, PRIMARY KEY ((artist), song_name));
-CREATE TABLE songs_by_genre (genre text, song_name text, song_image text, song_audio text, artist text, album text, upload_date DATE, PRIMARY KEY ((genre), song_name));
+CREATE TABLE songs (id INT PRIMARY KEY, song_name TEXT, song_image INT, song_audio INT, artist TEXT, genre TEXT, album TEXT, upload_date DATE);
+CREATE TABLE songs_by_album (album TEXT, song_name TEXT, song_image INT, song_audio INT, artist TEXT, genre TEXT, upload_date DATE, PRIMARY KEY ((album), song_name));
+CREATE TABLE songs_by_artist (artist TEXT, song_name TEXT, song_image INT, song_audio INT, genre TEXT, album TEXT, upload_date DATE, PRIMARY KEY ((artist), song_name));
+CREATE TABLE songs_by_genre (genre TEXT, song_name TEXT, song_image INT, song_audio INT, artist TEXT, album TEXT, upload_date DATE, PRIMARY KEY ((genre), song_name));
 -- CREATE TABLE song_count(id int PRIMARY KEY, label text);

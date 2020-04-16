@@ -78,13 +78,13 @@ const cassandraGen = () => {
 
             getSongImage = () => {
                 const numPadded = (k%900).toString().padStart(3, '0');
-                const songImage = 'https://audibly-bottom-player-songjpegs.s3-us-west-1.amazonaws.com/' + numPadded + '.jpg';
+                const songImage = numPadded;
                 return songImage;
             }
 
             getSongAudio = () => {
                 const numPadded = (k%900).toString().padStart(3, '0');
-                const songAudio = 'https://audibly-bottom-player-songwavs.s3-us-west-1.amazonaws.com/' + numPadded + '.wav';
+                const songAudio = numPadded;
                 return songAudio;
             }
 
@@ -144,7 +144,7 @@ const cassandraGen = () => {
             if (k % 10 === 1) {
                 genre = getGenre();
                 album = getAlbumName();
-                upload_date = new Date(+(new Date()) - Math.floor(Math.random()*10000000000)).toISOString().slice(0,10);
+                upload_date = new Date(+(new Date()) - Math.floor(Math.random()*1000000000000)).toISOString().slice(0,10);
             }
 
             const songData = {
