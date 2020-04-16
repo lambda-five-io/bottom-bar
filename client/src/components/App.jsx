@@ -35,6 +35,7 @@ class App extends React.Component {
     $.get('/songs')
       .done((data) => {
         this.setState({ songs: data.rows });
+        console.log(this.state.songs[1])
       })
       .fail(() => {
         console.error('error getting songs');
@@ -52,6 +53,7 @@ class App extends React.Component {
       currentIndex: this.state.currentIndex + 1,
       currentSong: this.state.songs[this.state.currentIndex + 1],
     });
+    console.log(this.state.currentSong);
   }
 
   prevSong() {
