@@ -5,7 +5,7 @@ const cassandra = require('../../db');
 //_________________________________________________________________________________
 exports.getAll = (req, res) => {
 
-    const query = `SELECT * FROM songs LIMIT 1000`;
+    const query = `SELECT * FROM songs LIMIT 300`;
     cassandra.client.execute(query)
       .then(result => {
     
